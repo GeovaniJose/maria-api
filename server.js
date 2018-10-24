@@ -19,4 +19,4 @@ requireDir('./src/models');
 // Rotas
 app.use('/api', require('./src/routes'));
 
-app.listen(3001, () => console.log("Servidor ouvindo..."));
+app.listen(process.env.PORT|| 3001, () => console.log("Servidor ouvindo..."));
