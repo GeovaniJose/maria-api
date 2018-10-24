@@ -10,8 +10,6 @@ app.use(cors());
 
 // Iniciando o DB
 mongoose.connect(
-    //mongodb://heroku_k5xq4kfx:vmdbs1q72lofij9sfrvrr2ljde@ds141043.mlab.com:41043/heroku_k5xq4kfx,
-    //'mongodb://usermaria:passmaria10@ds241133.mlab.com:41133/maria-api-db',
     process.env.MONGOLAB_URI,
     { useNewUrlParser: true }
 );
