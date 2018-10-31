@@ -11,9 +11,9 @@ const TituloSchema = new mongoose.Schema({
         required: true
     },
     history: {
-        type: String
+        type: Array
     },
-    dayDedicated: {
+    day: {
         type: Date
     },
     imageUrl: {
