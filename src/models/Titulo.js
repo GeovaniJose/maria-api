@@ -11,7 +11,7 @@ const TituloSchema = new mongoose.Schema({
         required: true
     },
     history: {
-        type: Array
+        type: []
     },
     day: {
         type: Date
