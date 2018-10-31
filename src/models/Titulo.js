@@ -14,7 +14,7 @@ const TituloSchema = new mongoose.Schema({
         type: []
     },
     day: {
-        type: Date
+        type: String
     },
     imageUrl: {
         type: String
