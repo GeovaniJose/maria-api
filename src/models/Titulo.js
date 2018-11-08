@@ -16,6 +16,10 @@ const TituloSchema = new mongoose.Schema({
     day: {
         type: String
     },
+    devotee: {
+        type: Number,
+        default: 0
+    },
     imageUrl: {
         type: String
     },
