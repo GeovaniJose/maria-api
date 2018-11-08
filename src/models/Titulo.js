@@ -19,11 +19,7 @@ const TituloSchema = new mongoose.Schema({
     devotee: {
         type: Number,
         default: 0
-<<<<<<< HEAD
     },
-=======
-    }
->>>>>>> 11d4b2514be81ec0cfc33b0856eb319efa5619be
     imageUrl: {
         type: String
     },
