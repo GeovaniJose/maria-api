@@ -17,11 +17,11 @@
   "dependencies": {
     "cors": "^2.8.4",
     "express": "^4.16.4",
-    "mongoose": "^5.3.6",
+    "mongoose": "^5.3.13",
     "mongoose-paginate": "^5.0.3",
-    "require-dir": "^1.1.0"
+    "require-dir": "^1.2.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.6"
   }
 }
