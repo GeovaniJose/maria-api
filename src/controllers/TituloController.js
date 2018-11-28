@@ -3,6 +3,18 @@ const mongoose = require('mongoose');
 const Titulo = mongoose.model('Titulo');
 
 module.exports = {
+    async findCurrentDay(req, res) {
+        try {
+            const currentDay = `${(new Date().getMonth() + 1)}-${new Date().getDate()}`
+
+            const titulo = await Titulo.find({ 'day': currentDay })
+
+            return res.status(200).json(titulo)
+        } catch (err) {
+            return res.status(400).send('Houve um erro ao recuperar os títulos que correspondem à data atual.', err)
+        }
+    },
+
     async index(req, res) {
         try {
             const { page = 1 } = req.query;

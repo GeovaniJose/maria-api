@@ -3,6 +3,7 @@ const routes = express.Router();
 
 const TituloController = require('./controllers/TituloController');
 
+routes.get('/titulos', TituloController.findCurrentDay);
 routes.get('/titulos', TituloController.index);
 routes.get('/titulos/:id', TituloController.show);
 routes.post('/titulos', TituloController.add);
