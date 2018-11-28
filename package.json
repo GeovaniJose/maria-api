@@ -10,7 +10,7 @@
   },
   "keywords": [],
   "author": "Geovani José da Silva",
-  "license": "ISC",
+  "license": "MIT",
   "engines": {
     "node": "10.12.0"
   },
