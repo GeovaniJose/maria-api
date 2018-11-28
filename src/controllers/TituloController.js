@@ -7,7 +7,7 @@ module.exports = {
         try {
             const titulos = await Titulo.find()
 
-            const titulosCurrentDay = titulos.filter(titulo => new Date(`${titulo.day}-2018`).toLocaleDateString() === new Date('11-27-2018').toLocaleDateString())
+            const titulosCurrentDay = titulos.filter(titulo => new Date(`${titulo.day}-2018`).toLocaleDateString() === new Date().toLocaleDateString())
 
             return res.status(200).json(titulosCurrentDay)
         } catch (err) {
